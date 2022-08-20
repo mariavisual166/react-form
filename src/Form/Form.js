@@ -8,12 +8,11 @@ function Form({ children }) {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  
+
   const onSubmit = (data) => console.log(data);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-    
       <Input
         name="Name"
         label="First Name"
