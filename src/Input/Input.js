@@ -1,19 +1,16 @@
 import TextField from "@mui/material/TextField";
-import * as React from "react";
+import React from "react";
 
-function Input({ name, label, register, required, errors, type }) {
+function Input({ name, label, required, type }) {
   return (
-    <>
-      <TextField
-        id="outlined-basic"
-        label={label}
-        variant="outlined"
-        type={type}
-        {...register(name, { required })}
-      />
-
-      {errors[name] && <span>This field is required</span>}
-    </>
+    <TextField
+      name={name}
+      id="outlined-basic"
+      label={label}
+      variant="outlined"
+      type={type}
+      required={required}
+    />
   );
 }
 

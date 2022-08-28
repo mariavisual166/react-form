@@ -1,12 +1,8 @@
 import React from "react";
-import Form from "../FormBase/Form";
+import MainPage from "../MainPage/MainPage";
 
 function App() {
-  return (
-    <React.StrictMode>
-      <Form />
-    </React.StrictMode>
-  );
+  return <MainPage />;
 }
 
 export default App;
