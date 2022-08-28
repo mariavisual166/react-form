@@ -6,17 +6,17 @@ import Grid from "@mui/material/Grid";
 
 function MainPage() {
   const onSubmit = (fields) => {
-    console.log(fields.name.value);
+    console.log(fields);
   };
 
   return (
     <Form onSubmit={onSubmit}>
       <Grid container spacing={2}>
         <Grid item xs={6}>
-          <Input name="name" label="First Name" required />
+          <Input name="field1" label="First Name" required />
         </Grid>
         <Grid item xs={6}>
-          <Input name="name1" label="First Name" required />
+          <Input name="field2" label="First Name" required />
         </Grid>
         <Button variant="outlined" type="submit">
           submit
