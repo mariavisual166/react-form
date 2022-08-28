@@ -1,10 +1,10 @@
 import React from "react";
-import Form from "../Form/Form";
+import Form from "../FormBase/Form";
 
 function App() {
   return (
     <React.StrictMode>
-     <Form />
+      <Form />
     </React.StrictMode>
   );
 }

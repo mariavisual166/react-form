@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import Button from "@mui/material/Button";
 import Input from "../Input/Input";
 
 function Form({ children }) {
@@ -20,9 +21,10 @@ function Form({ children }) {
         errors={errors}
         required
       />
+      <Button variant="outlined" type="submit">
+        submit
+      </Button>
       {children}
-
-      <input type="submit" />
     </form>
   );
 }
